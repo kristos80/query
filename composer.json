@@ -1,29 +1,29 @@
 {
-  "name": "kristos80/query",
-  "description": "Query is a utility that helps you get data from the GET and POST super-globals and any given payload if any.",
-  "license": "MIT",
-  "require": {
-    "php": ">=8.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Kristos80\\Query\\": "src"
+    "name": "kristos80/query",
+    "description": "Query is a utility that helps you get data from the GET and POST super-globals and any given payload if any.",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kristos80\\Query\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "version": "0.0.1",
+    "require-dev": {
+        "marcocesarato/php-conventional-changelog": "^1.17",
+        "phpunit/phpunit": "^10"
+    },
+    "scripts": {
+        "changelog": "conventional-changelog",
+        "release": "conventional-changelog --commit",
+        "release:patch": "conventional-changelog --patch --commit",
+        "release:minor": "conventional-changelog --minor --commit",
+        "release:major": "conventional-changelog --major --commit",
+        "test": "vendor/bin/phpunit tests"
     }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "version": "1.0.4",
-  "require-dev": {
-    "marcocesarato/php-conventional-changelog": "^1.17",
-    "phpunit/phpunit": "^10"
-  },
-  "scripts": {
-    "changelog": "conventional-changelog",
-    "release": "conventional-changelog --commit",
-    "release:patch": "conventional-changelog --patch --commit",
-    "release:minor": "conventional-changelog --minor --commit",
-    "release:major": "conventional-changelog --major --commit",
-    "test": "vendor/bin/phpunit tests"
-  }
 }
