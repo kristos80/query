@@ -8,7 +8,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 # https://localhost:8080?name=chris
 echo Query::get("name"); # chris
 
-# curl -X POST -d 'name=chris' http://localhost:8080?name=chris
+# curl -X POST -d 'name=chris' http://localhost:8080
 echo Query::post("name"); # chris
 
 # curl -X POST -H "Content-Type: application/json" -d '{"name":"chris"}' http://localhost:8080
